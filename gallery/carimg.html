@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>www.Mycar.in</title>
+    <link rel="stylesheet" href="../carcss.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tilt+Prism&display=swap" rel="stylesheet">
+    <style>
+        .gallary img{
+            transition:transform 400ms ease;
+        }
+        .gallary img:hover{
+            transform: scale(1.05);
+            box-shadow: 0px 0px 10px rgb(49, 20, 0);
+        }
+     
+        .sec1 {
+            display: grid;
+            justify-content: center;
+            gap: 1rem;
+            align-items: center;
+            grid-template-columns: 14rem 19rem 16rem;
+            margin: 2rem 0rem;
+        }
+        .sec2{
+            display: flex;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-around;
+    justify-items: center;
+    width: 70%;
+    align-items: center;
+    margin: 1rem auto;
+
+        }
+        .sec2 img{
+            height: 25rem;
+    width: 27rem;
+    margin-bottom: 2rem;
+        }
+
+        .sec3 {
+            display: grid;
+            justify-content: center;
+            gap: 1rem;
+            align-items: center;
+            grid-template-columns: 21rem 21rem 12rem;
+
+        }
+        
+        header{  
+            background: url(bg1.jpg) rgba(0, 0, 0, 0.3) center center;
+    height: 100vh;
+    width: 100%;
+    background-blend-mode: darken;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header h1{
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    font-size: 2.2rem;
+    text-align: center;
+}
+.sec3 img {
+    height: 16rem;
+}
+
+
+@media only screen and (max-width:865px){
+    .sec1{
+        grid-template-columns: none;
+        justify-items: center;
+    }
+    .sec3{
+        justify-items: center;
+        grid-template-columns: none;
+    }
+    .sec2 img {
+    height: 20rem;
+    width: 22rem;
+}
+    
+    .sec3 img {
+    height: 16rem;
+}
+    .sec2{
+        flex-direction: column;
+        justify-items: center;
+    }
+    .car-fixed-size{
+            width: 21rem;
+    height: 18rem;
+}
+}
+    </style>
+</head>
+
+<body>
+    <header  id="top-scroll">
+    <nav>
+        <div class="logo">
+            <!-- <h3>My</h3> -->
+            <img src="../images/logo.png" alt="logo">
+            <h3>MyCar</h3>
+        </div>
+        <div class="opan-close-btn">
+            <button id="opan-btn"><i class="uil uil-bars"></i></button>
+            <button id="closs-btn"><i class="uil uil-multiply"></i></button>
+        </div>
+        <ul class="list phone-list">
+            <li>
+                <a href="../index.html" style="color: #f34d00;">HOME</a>
+            </li>
+            <li>
+                <a href="../index.html">SERVICES</a>
+            </li>
+            <li>
+                <a href="carimg.html">GALLERY</a>
+            </li>
+            <li>
+                <a href="about.html">ABOUT</a>
+            </li>
+            
+            <li>
+                <a href="#last-sec">CONTACT US</a>
+            </li>
+            <li class="login">
+                <a href="log in page.html"><button> LOG IN </button></a>
+            </li>
+            </ul>
+        </nav>
+            
+                    <h1>All car brands are available on mycar</h1>
+                    <div class="phone-icon">
+                        <a href=""> <img src="../images/Customer Care.gif" alt=""></a>
+                         <a href=""><img src="../images/Whatsapp.gif" alt=""></a>
+                     </div>
+                     <div class="top-arrow">
+                       <a href="#top-scroll">  <img src="../images/Upload.gif" alt=""></a>
+                     </div>
+        
+        </header>
+        <div class="gallary">
+        <div class="sec1">
+            <img src="car (5).jpeg" alt="">
+            <img src="car (4).jpeg" alt="">
+            <img src="car (8).jpeg" alt="">
+            <img class="car-fixed-size pc-size" src="car (9).jpeg" alt="">
+        </div>
+        <div class="sec2">
+            <img src="car (7).jpeg" alt="">
+            <img src="car (2).jpeg" alt="">
+        </div>
+        <div class="sec3">
+            <img src="car (12).jpeg" alt="">
+            <img src="car (6).jpeg" alt="">
+            <img src="car (14).jpg" alt="">
+            <img class="car-fixed-size pc-size" src="car (3).jpeg" alt="">
+        </div>
+        <div class="sec2">
+            <img src="car (13).jpeg" alt="">
+            <img src="car (1).jpeg" alt="">
+        </div>
+        <div class="sec3">
+            <img src="car (17).jpeg" alt="">
+            <img src="car (14).jpeg" alt="">
+            <img src="car (10).jpeg" alt="">
+            <img class="car-fixed-size pc-size" src="car (15).jpeg" alt="">
+        </div>
+        <div class="sec2">
+            <img src="car (11).jpeg" alt="">
+            <img src="car (16).jpeg" alt="">
+        </div>
+    </div>
+    <!-- <div class="container"></div> -->
+    <div id="last-sec">
+        <h2>CONTACT US</h2>
+        <div class="contact">
+            <div class="contact-box">
+
+                <input type="text" name="name" id="user-name" placeholder="Name">
+                <input type="number" name="phone no." id="user-name" placeholder="Mobile no..">
+            </div>
+
+            <input type="text" name="massage" id="massage" placeholder="Massage Title">
+            <textarea rows="10" cols="20" name="" id="massage-detail" placeholder="Massage....."></textarea>
+
+        </div>
+        <input type="submit" name="" id="submit-btn">
+    </div>
+    <footer>
+        <div class="last-menu">
+
+            <div class="footer-logo">
+                <h3>MyCar</h3>
+                <img src="../images/logo.png" alt="logo">
+            </div>
+            <div class="contact-items">
+                <h3 class="pera-head">Contact us on</h3>
+                <p><i class="uil uil-phone-volume"></i>phone: +1-543-123-4567</p>
+                <p><i class="uil uil-envelopes"></i>example@fylo.com</p>
+                <h4 class="pera-head">
+                    useful link
+                </h4>
+                <p><i></i>Privacy Poslicy</p>
+                <p><i></i>Term & Conditions</p>
+                <p><i></i>Register for new Member</p>
+            </div>
+            <div class="icon-list ">
+                <i class="uil uil-facebook-f"></i>
+                <i class="uil uil-twitter"></i>
+                <i class="uil uil-github"></i>
+                <i class="uil uil-youtube"></i>
+                <i class="uil uil-linkedin"></i>
+            </div>
+
+        </div>
+    </footer>
+    <script src="../script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>www.login.in</title>
+    <link rel="stylesheet" href="../carcss.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tilt+Prism&display=swap" rel="stylesheet">
+    <style>
+        .log-container {
+            background: url("longin-hero-pic.jpg");
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .login-box {
+            box-shadow: 0px 0px 5px #2c2c2c;
+            width: 20rem;
+            height: 19rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            /* background:rgba(0, 0, 0, 0.4) */
+        }
+
+        .login-box h3 {
+            color: #ffffff;
+            letter-spacing: 5px;
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+            border-bottom: 1px dashed;
+            text-shadow: 0 0 5px black;
+        }
+
+        .user {
+            margin: 1rem auto;
+        }
+
+        .user h5 {
+            color: #ffffff;
+            font-size: 1rem;
+            letter-spacing: 1px;
+        }
+
+        .user i {
+            margin-right: 0.5rem;
+        }
+
+        .user input::placeholder {
+            color: rgb(119, 119, 119);
+        }
+
+        .user input {
+            padding: 0 5px;
+            width: 15rem;
+            height: 1.7rem;
+            color: #ffff;
+            border-radius: 0.2rem;
+            border: none;
+            margin: 0.4rem 0;
+            background: none;
+            border-bottom: 2px solid rgba(248, 244, 244, 0.4);
+        }
+
+        .login-box button {
+            color: #ffff;
+            width: 5rem;
+            height: 1.5rem;
+            transition: all 400ms ease;
+        }
+
+        .login-box button:hover {
+            border: 1px solid var(--color-danger);
+            color: var(--color-danger);
+            background-color: white;
+            transform: scale(1.2);
+
+        }
+        .nav{
+            position: absolute;
+            color: white;
+            display: flex;
+    justify-content: space-between;
+    width: 95%;
+    align-items: center;
+        }
+        .nav h4 a{
+            color: #ff3b18;
+            transition: transform 400ms ease;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <div class="logo">
+            <!-- <h3>My</h3> -->
+            <img src="../images/logo.png" alt="logo">
+            <h3>MyCar</h3>
+        </div>
+        <h4><a href="../index.html"> HOME</a></h4>
+    </div>
+    <div class="log-container">
+        <div class="login-box">
+            <h3>☺  WELCOME  ☺</h3>
+            <div class="user">
+                <h5><i class="uil uil-user-circle"></i>User</h5>
+                <input type="email" placeholder="Enter your Email">
+                <h5><i class="uil uil-key-skeleton-alt"></i>Password</h5>
+                <input type="password" placeholder="Enter your password" id="">
+            </div>
+            <button>Login</button>
+        </div>
+    </div>
+</body>
+
+</html>

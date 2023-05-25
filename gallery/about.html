@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>www.about.com</title>
+    <link rel="stylesheet" href="../carcss.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tilt+Prism&display=swap" rel="stylesheet">
+    <style>
+        #about {
+
+            height: 100vh;
+            /* display: flex; */
+            justify-content: center;
+            align-items: center;
+            /* background: #6dffff; */
+        }
+
+        .fst-sec {
+            background: url("about-hero-pic.1jpeg.jpg") rgba(0, 0, 0, 0.3) center center;
+            height: 95vh;
+            width: 100%;
+            background-blend-mode: darken;
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            /* justify-content: center; */
+            align-items: center;
+        }
+
+
+        .fst-sec h1 {
+            width: 50%;
+            font-size: 1.9rem;
+            color: #ffff;
+            margin-left: 3rem;
+        }
+
+        .pera-sec {
+            width: 85%;
+            margin: 0 auto;
+            line-height: 2;
+        }
+
+        span {
+            color: rgb(255, 94, 65);
+            font-size: 2.2rem;
+        }
+
+        #group-sec {
+            height: 16rem;
+            margin: 6rem 0;
+            line-height: 3;
+        }
+
+        #group-sec h3 {
+            font-size: 1.6rem;
+            text-align: center;
+            color: #00448b;
+        }
+
+        .send-sec {
+            display: flex;
+            height: 10rem;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+
+        .box1 {
+            height: 9rem;
+            width: 25rem;
+            display: grid;
+            line-height: 1.5;
+            /* line-height: 2; */
+            grid-template-columns: 35% 30%;
+            background: #8effffba;
+            border-bottom-right-radius: 3rem;
+            border-top-left-radius: 3rem;
+            justify-items: center;
+            align-items: center;
+        }
+
+        .box1 img {
+            height: 5.4rem;
+        }
+
+        .box1 h2 {
+            color: #005187;
+        }
+
+        .mission {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.2rem;
+            width: 70%;
+            margin: 2rem auto;
+        }
+
+        .mission-head {
+            font-size: 1.6rem;
+            text-align: center;
+            color: #00448b;
+        }
+
+        .items {
+            height: 8rem;
+            background-color: #07a7e942;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+            border-radius: 0.3rem
+        }
+
+        .bg-color {
+            background: #ff51001a;
+        }
+
+        .maneger-sec {
+            display: grid;
+            grid-template-columns: 42% 35%;
+            justify-items: center;
+            justify-content: center;
+            margin: 5rem 0;
+        }
+
+        .maneger-sec img {
+            height: 20rem;
+            border-radius: 11px;
+            box-shadow: 0 0 5px #f18a77;
+        }
+
+        #pera-sec h3 {
+            color: #f93a00;
+            font-size: 1.7rem;
+            border-bottom: 2px solid;
+            width: 15rem;
+            padding: 7px;
+        }
+
+        #pera-sec h5 {
+            margin: 0.6rem 0;
+        }
+
+        .ceo {
+            font-size: 1rem;
+            color: #002ac5;
+        }
+
+        .items img {
+            height: 4rem;
+        }
+
+        @media only screen and (max-width:835px) {
+            .mission {
+                width: 96%;
+            }
+
+            .maneger-sec {
+                grid-template-columns: 50% 52%;
+            }
+
+            .box1 {
+                height: 10rem;
+                width: 20.81rem;
+            }
+        }
+
+        @media only screen and (max-width:650px) {
+
+            #group-sec {
+                height: 25rem;
+                margin-top: 10rem;
+            }
+
+            .items {
+                margin: 0 10px;
+            }
+
+            .send-sec {
+                display: grid;
+                justify-items: center;
+                height: 22rem;
+                gap: 1rem;
+                align-items: center;
+                width: 90%;
+                margin: 0 auto;
+
+            }
+
+            .fst-sec h1 {
+                width: 79%;
+            }
+
+            .mission {
+                grid-template-rows: 1fr 1fr;
+                grid-template-columns: none;
+
+            }
+
+            .maneger-sec {
+                grid-template-columns: none;
+                grid-template-rows: 70% 37%;
+
+            }
+
+            #pera-sec {
+                margin: 0 0.66rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <!-- <h3>My</h3> -->
+            <img src="../images/logo.png" alt="logo">
+            <h3>MyCar</h3>
+        </div>
+        <div class="opan-close-btn">
+            <button id="opan-btn"><i class="uil uil-bars"></i></button>
+            <button id="closs-btn"><i class="uil uil-multiply"></i></button>
+        </div>
+        <ul class="list phone-list">
+            <li>
+                <a href="../index.html" style="color: #f34d00;">HOME</a>
+            </li>
+            <li>
+                <a href="../index.html">SERVICES</a>
+            </li>
+            <li>
+                <a href="carimg.html">GALLERY</a>
+            </li>
+            <li>
+                <a href="about.html">ABOUT</a>
+            </li>
+
+            <li>
+                <a href="#last-sec">CONTACT US</a>
+            </li>
+            <li class="login">
+                <a href="log in page.html"><button> LOG IN </button></a>
+            </li>
+
+        </ul>
+    </nav>
+    <div id="about">
+        <div class="fst-sec">
+            <!-- <img src="about-hero-pic.2jpg.avif" alt=" icone"> -->
+            <h1>Our <span>Mission</span> is to bring <span> Joy</span> and <span>delight</span> to the process of car
+                buying in <span>India</span>. </h1>
+                <div class="phone-icon">
+                    <a href=""> <img src="../images/Customer Care.gif" alt=""></a>
+                     <a href=""><img src="../images/Whatsapp.gif" alt=""></a>
+                 </div>
+                 <div class="top-arrow">
+                    <a href="#about">  <img src="../images/Upload.gif" alt=""></a>
+                  </div>
+        </div>
+        <div class="pera-sec">
+            <h2>About Us</h2>
+            <p><span>MyCAR </span>mission is to bring delight in car buying, we offer a bouquet of reliable tools and
+                services to
+                help car consumers decide on buying the right car, at the right price and from the right partner.</p>
+        </div>
+    </div>
+    <div id="group-sec">
+        <h3>Our Group's Scale</h3>
+        <div class="send-sec">
+            <div class="box1">
+                <img src="icon (4).svg" alt="">
+                <div class="smoll-pera">
+                    <h2>8,00,000+</h2>
+                    <p>Vehicles Listed</p>
+                </div>
+            </div>
+            <div class="box1">
+                <img src="icon.svg" alt="">
+                <div class="smoll-pera">
+
+                    <h2>31.9 M</h2>
+                    <p>Monthly Unique Visitors</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <h2 class="mission-head">Our Core Values</h2>
+    <div class="mission">
+        <div class="items">
+            <img src="icon (3).svg" alt="">
+            <h4>RESPECT</h4>
+            <p>We respect out colleagues, customers and partners</p>
+        </div>
+        <div class="items bg-color">
+            <img src="icon (2).svg" alt="">
+            <h4>
+                OWNERSHIP
+            </h4>
+            <p>We take ownership of results</p>
+        </div>
+        <div class="items bg-color">
+            <img src="icon (1).svg" alt="">
+            <h4>AGILITY</h4>
+            <p>We are extremely open-minded and adaptable</p>
+        </div>
+        <div class="items">
+            <img src="icon (5).svg" alt="">
+            <h4>WE BEFORE I</h4>
+            <p>We always put our company ahead of ourselves</p>
+        </div>
+    </div>
+    <div class="maneger-sec">
+        <img src="ceo.jpg" alt="photo">
+        <div id="pera-sec">
+            <h3>SHURESH MAHTO</h3>
+            <h5><span class="ceo">CEO</span>, jamshedpur</h5>
+            <p>SHURESH MAHTO was appointed President and Chief Executive Officer for MyCAR in June 2020,
+                following a six-month period as interim CEO.  He has 3 years of experience with Avis Budget Group, holding various positions of increasing responsibility.</p>
+        </div>
+    </div>
+    <div id="last-sec">
+        <h2>CONTACT US</h2>
+        <div class="contact">
+            <div class="contact-box">
+
+                <input type="text" name="name" id="user-name" placeholder="Name">
+                <input type="number" name="phone no." id="user-name" placeholder="Mobile no..">
+            </div>
+
+            <input type="text" name="massage" id="massage" placeholder="Massage Title">
+            <textarea rows="10" cols="20" name="" id="massage-detail" placeholder="Massage....."></textarea>
+
+        </div>
+        <input type="submit" name="" id="submit-btn">
+    </div>
+    <footer>
+        <div class="last-menu">
+
+            <div class="footer-logo">
+                <h3>MyCar</h3>
+                <img src="../images/logo.png" alt="logo">
+            </div>
+            <div class="contact-items">
+                <h3 class="pera-head">Contact us on</h3>
+                <p><i class="uil uil-phone-volume"></i>phone: +1-543-123-4567</p>
+                <p><i class="uil uil-envelopes"></i>example@fylo.com</p>
+                <h4 class="pera-head">
+                    useful link
+                </h4>
+                <p><i></i>Privacy Poslicy</p>
+                <p><i></i>Term & Conditions</p>
+                <p><i></i>Register for new Member</p>
+            </div>
+            <div class="icon-list ">
+                <i class="uil uil-facebook-f"></i>
+                <i class="uil uil-twitter"></i>
+                <i class="uil uil-github"></i>
+                <i class="uil uil-youtube"></i>
+                <i class="uil uil-linkedin"></i>
+            </div>
+
+        </div>
+    </footer>
+    <script>
+
+    </script>
+    <script src="../script.js"></script>
+</body>
+
+</html>
