@@ -36,7 +36,7 @@ button{
     cursor: pointer;
 }
 .phone-icon img{
-    height: 5rem;
+    height: 3.4rem;
 }
 .phone-icon {   
     position: fixed;
@@ -46,7 +46,7 @@ button{
     height: 13rem;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 .top-arrow img{
     height: 4rem;
@@ -580,7 +580,7 @@ color: #f34d00;
         gap: 0;
         position: absolute;
     right: 3rem;
-    top: 1rem;
+    top: 2.5rem;
         display: none;
     }
     .cantent{
@@ -594,11 +594,11 @@ color: #f34d00;
         position: absolute;
         right: 3rem;
         z-index: 2;
-        top: 1rem;
+        top: 2rem;
     }
     
     .opan-close-btn i{    
-        font-size: 1.3rem;
+        font-size: 1.6rem;
         font-weight: bold;
         color: white;
     }
