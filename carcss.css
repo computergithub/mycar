@@ -230,7 +230,8 @@ height: 14rem;
     font-weight: 500;
     border-radius: 0.3rem;
     position: absolute;
-    bottom: 5rem;
+    bottom: 6rem;
+    width:45%;
     left: 5rem;
     color: white;
     font-size: 2rem;
@@ -602,7 +603,7 @@ color: #f34d00;
     }
 
     .list li{
-        animation: navItems 400ms linear forwards;
+        animation: navItems 350ms linear forwards;
         transform-origin: top bottom;
         opacity: 0;
         transition: transform 200ms ease;
@@ -700,7 +701,7 @@ color: #f34d00;
         height: 46rem;
     }
     .box p {
-        left: 8rem;
+        left: 6.7rem;
     }
     .box img{
         height: 14.5rem;
